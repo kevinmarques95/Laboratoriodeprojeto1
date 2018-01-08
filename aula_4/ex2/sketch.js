@@ -16,8 +16,13 @@ function setup()
 function draw()
 {
     background(255, 50);
-    noStroke();
+    velocidade();
+    colisoes();
+    desenha();
+}    
 
+function colisoes()
+{
     if (x+t/2 > width || x-t/2 < 0)
     {
         vX*=-1;
@@ -31,11 +36,18 @@ function draw()
         fill(random(255), random(255), random(255));
         background(255, 100);
     }
+}
 
+function velocidade()
+{
     x+=vX;
     y+=vY;
+}
 
+function desenha()
+{
     ellipse(x, y, t, t);
+    noStroke();
 }
 
 function windowResized()
