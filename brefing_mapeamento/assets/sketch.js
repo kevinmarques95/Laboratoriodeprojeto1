@@ -33,7 +33,7 @@ function draw()
     
       var pixel = (video.pixels[i] + video.pixels[i+1] + video.pixels[i+2])/3;
       
-      if (pixel>180)//condição que define quando os quadrados são desenhados em função do espetro de cor
+      if (pixel>180)//condição que define quando os quadrados são desenhados
       {
         noStroke();
         fill (53, 255, 252);//atribuição da cor ao circulo
@@ -51,7 +51,7 @@ function draw()
     
       var pixel = (video.pixels[i] + video.pixels[i+1] + video.pixels[i+2])/3;
       
-      if (pixel>230)//condição que define quando os quadrados são desenhados em função do espetro de cor
+      if (pixel>230)//condição que define quando os quadrados são desenhados
       {
         noStroke();
         fill (255, 129, 0);//atribuição da cor ao quadrado
